@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('../image/intro-bg.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.red{
+  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline;
+}
+
+button{
+  border-radius: 20px;
+  border: none;
+  height: 40px;
+  width: 80px; 
+  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover{
+  color: black;
+  font-weight: bold;
+}
+
+img{
+  width: 80px;
+  height: 80px;
+  margin-top:12%;
+}
+
+</style>
+<body>
+
+<div class="bgimg">
+  <center><img src = ../image/logo.png></center>
+  <div class="middle">
+    
+    <h1 class="subject" style="text-transform:uppercase;">You <div class = "red">can't</div> access this page right now</h1>
+    <button onclick="window.location.href='../index.html'">BACK</button>
+  </div>
+ 
+</div>
+
+
+
+
+</body>
+</html>
