@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+    <link rel="icon" href="image/logo.png">
+
+  <head>
+
+      <title>Class Attendance</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/indexadmin.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="../FP/admin/service/js/modal.show.index.admin.js"></script>
+  </head>
+
+  
+
+<!-- Navber controller-->
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" >
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+            <a class="navbar-brand" href="#myPage  ">
+              <img src = image/logo.png>
+            </a>
+        </div>
+
+<!-- Collapse navber-->
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#login" data-toggle="modal" data-target="#login" style="font-family:'roboto'; font-size: 16px;">LOGIN</a></li></zz>
+           <li><a href="#register" data-toggle="modal" data-target="#register" style="font-family:'roboto'; font-size: 16px;">REGISTER</a></li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+  <script>
+
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+  </script>
+
+
+<!--Login -->
+    
+<div class="modal fade " id="login" role="dialog">
+    <br><br><br><br><br>
+    <div class="modal-dialog">
+      <div class="modal-content text-center">
+          
+            <br>
+              <center><h5><strong>Welcome Admin.</strong> Please login.</h5></center>
+                <form action="../FP/admin/service/auth/check.login.service.php" method="post" >
+			          <br>
+			            <fieldset>
+                    <div class="form-group">
+                      <p><input type="text" placeholder="Username" name="txtAddusername"  maxlength="15" minlength="8" required></p>
+                      <br>
+                    </div>
+
+                  
+                      <p><input  type="password"  class="input-item" id="myInput" placeholder="Password" name="txtAddpassword"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></p>
+                      <div class="text-left">
+                      <input type="checkbox"  onclick="myFunction()">Show Password
+                    </div>
+                      <br>
+                           
+                    
+				        <center><p><input type="submit" value="Login"></p></center> 
+
+	              	</fieldset>
+                </form>
+              <br>
+			        <font  size="1"><p style="margin-bottom:5%;">Not registered?<a onclick="fn()" href="#register"  data-toggle="modal" data-target="#register">  Create an account</a> </p></font>
+        
+        
+      </div>
+    </div>
+  </div>
+
+<!--Register -->
+  <div class="modal fade " id="register" role="dialog">
+    <br><br><br><br><br><br><br>
+    <div class="modal-dialog">
+      <div class="modal-content ">
+         
+          <br>
+          <center><h5><strong>Register</strong></h5></center>
+            <form name="regisform" action="../FP/admin/service/records/save.registion.php" method="post" >
+              <fieldset>
+                <font class="message"  align="left" ><b> Username : </b></font>
+              <div class="form-group">
+                <p><input type="text" name="txtAdusername"  maxlength="15" minlength="8" required></p> 
+              </div>
+                <font class="message" align="left"><b> Password : </b></font>
+                <br>
+                
+              
+				        <p><input type="password"  name="txtAdpassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></p> 
+                <br>
+              
+                <center><p><input type="submit" value="Create"></p></center>
+              </fieldset>
+            </form>
+            
+      </div>
+    </div>
+  </div>
+
+<!--  (HOME Section) -->
+<div id="myPage" class="container">
+  <br><br>
+  <h4><b>Class Attendance</b> </h4>
+  <font class="Facial"><h3>with Facial Recognition</h3></font> </b></font> 
+</div>
+
+
+
+</body>
+</html>

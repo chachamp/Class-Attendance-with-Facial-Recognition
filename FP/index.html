@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <link rel="icon" href="image/logo.png">
+
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Class Attendance</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../FP/css/indexuser.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+</head>
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage  ">
+        <img src = image/logo.png>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li><a href="#login" data-toggle="modal" data-target="#login" style="font-family:'roboto'; font-size: 16px;" >LOGIN</a></li>
+        <li><a href="#register" data-toggle="modal" data-target="#register" style="font-family:'roboto';font-size: 16px;">REGISTER</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<!--Login -->
+
+  <div class="modal fade " id="login" role="dialog">
+    <br><br><br>
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content text-center">
+      
+          <br>
+          <center><h5><strong>Welcome User.</strong> Please login.</h5></center>
+    	<form action="../FP/user/service/auth/check.login.service.php" method="post" >
+			<br>
+			<fieldset>
+		
+				<p><input type="text" placeholder="Username" name="txtusername"  minlength="8" maxlength="15" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
+                <br>
+				<p><input type="password"  placeholder="Password" name="txtpassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
+			
+  	
+				<center><p><input type="submit" value="Login"></p></center> 
+
+		</fieldset>
+    </form>
+    <br>
+			<font size="1"><p>Not registered? <a href="#register" data-toggle="modal" data-target="#register">Create an account</a></p></font>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button></form>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!--Register -->
+
+  <div class="modal fade " id="register" role="dialog">
+    
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content ">
+      
+          
+          <br>
+          <center><h5><strong>Register</strong></h5></center>
+        
+		<form name="regisform" action="../FP/user/service/records/save.registion.php" method="post">
+
+			<fieldset>
+                <font class="message"  align="left"><b> Username : </b></font>
+				<p><input type="text" name="txtusername" minlength="8" maxlength="15" required></p> 
+               
+                <font class="message" align="left"><b> Password : </b></font>
+                <br>
+                <font class="message" align="left"><b> (ใช้อักขระ 8 ตัวขึ้นไปที่มีทั้งตัวอักษร ตัวเลข และสัญลักษณ์ผสมกัน)</b></font>
+				<p><input type="password"  name="txtpassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></p> 
+              
+                <font class="message" align="left"><b> Student ID : </b></font>
+				<p><input type="text"  name="txtstuid" pattern="{8,}" required></p> 
+            
+                <font class="message" align="left"><b> Section : </b></font>
+				<p><input type="text"  name="txtsection" required></p> 
+                <br>
+                <center><p><input type="submit" value="Create"></p></center>
+               
+
+
+			</fieldset>
+
+		</form>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button></form>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+
+
+  
+
+<!--  (HOME Section) -->
+<div id="myPage" class="container2">
+   <form action="../FP/user/service/auth/check.codeclass.service.php" method="post" >
+      <br>
+   <center><h3>FIND YOUR CLASS</h3></center>
+  
+ 
+  <div class="row">
+    
+    <center><input type="search" name="txtcodeclass" id="txtcodeclass"></center>
+      <br>
+      <center><button type="go" style="font-size:12px;font-family:'roboto';">GO</button> </center>
+    </form>
+    
+  </div>
+
+
+
+<!-- Footer -->
+
+<!--<footer class="text-center">
+
+   Web Developed by  <a href="#"  title="Visit LOGO Web"> CHA CHAMP</a> 
+</footer>
+</div>
+-->
+
+</body>
+</html>
