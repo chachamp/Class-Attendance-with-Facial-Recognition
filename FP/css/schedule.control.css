@@ -1,0 +1,28 @@
+.control{
+    min-width:900px;
+
+}
+@media only screen and (min-width: 375px) {
+  .control{
+    min-width:300px;
+  }
+
+}
+@media only screen and (max-width: 375px) {
+  .control{
+    min-width:300px;
+  }
+
+}
+@media only screen and (max-width: 320px) {
+  .control{
+    min-width:250px;
+  }
+
+}
+@media only screen and (min-width: 425px) {
+  .control{
+    min-width:375;
+  }
+
+}

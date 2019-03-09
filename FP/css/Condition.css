@@ -1,0 +1,416 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- https://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* ---------- https://meyerweb.com/eric/tools/css/reset/ ---------- */
+
+@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+body {
+	background: #f2f2f2;
+	color: #5a5656;
+	font: 100%/1.5em 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+a { text-decoration: none; }
+
+h1 { font-size: 1em; }
+
+h1, p {
+	margin-bottom: 10px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.uppercase { text-transform: uppercase; }
+
+/* ---------- LOGIN ---------- */
+
+@media only screen and (min-width: 375px) {
+.login {
+	margin: 35px auto;
+	width: 300px;
+
+}
+.boxlist {
+    margin: 2px 0 0;
+    color: #524f4f;
+    font-size: 11px;
+    font-family: "Roboto", sans-serif;
+  }
+.message {
+    margin: 35px 0 0;
+    color: #000000;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+  }
+
+.submessage {
+    margin: 35px 0 0;
+    color: #524f4f;
+    font-size: 11px;
+    font-family: "Roboto", sans-serif;
+  }
+
+form fieldset input[type="text"] {
+	background: #e5e5e5;
+	border: none;
+	border-radius: 3px;
+	color: #5a5656;
+	font-family: inherit;
+	font-size: 11px;
+	height: 30px;
+	outline: none;
+	padding: 0px 10px;
+	width: 300px;
+  -webkit-appearance:none;
+}
+
+form fieldset input[type="submit"] {
+	background-color: #13de00;
+	border: none;
+	border-radius: 3px;
+	color: #f4f4f4;
+	cursor: pointer;
+	font-family: inherit;
+	height: 30px;
+	text-transform: uppercase;
+	width: 60px;
+  -webkit-appearance:none;
+  -webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+	font-size: 10px;
+}
+
+
+form fieldset a {
+	color: #5a5656;
+	font-size: 10px;
+}
+
+form fieldset a:hover { text-decoration: underline; }
+
+.btn-round {
+	background: #5a5656;
+	border-radius: 50%;
+	color: #f4f4f4;
+	display: block;
+	font-size: 12px;
+	height: 50px;
+	line-height: 50px;
+	margin: 30px 125px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 50px;
+}
+form fieldset select[type="select"] {
+    background: #e5e5e5;
+    border: none;
+    border-radius: 3px;
+    color: #5a5656;
+    font-family: inherit;
+    font-size: 11px;
+    height: 30px;
+    outline: none;
+    padding: 0px 5px;
+    width: 350px;
+  -webkit-appearance:none;
+}
+
+
+}
+@media only screen and (max-width: 375px) {
+	.login {
+		margin: 35px auto;
+		width: 300px;
+	
+	}
+    .boxlist {
+		margin: 2px 0 0;
+		color: #524f4f;
+		font-size: 11px;
+		font-family: "Roboto", sans-serif;
+      }
+	.submessage {
+		margin: 35px 0 0;
+		color: #524f4f;
+		font-size: 11px;
+		font-family: "Roboto", sans-serif;
+	  }
+	.message {
+        margin: 35px 0 0;
+        color: #000000;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+      }
+	form fieldset input[type="text"] {
+		background: #e5e5e5;
+		border: none;
+		border-radius: 3px;
+		color: #5a5656;
+		font-family: inherit;
+		font-size: 11px;
+		height: 30px;
+		outline: none;
+		padding: 0px 10px;
+		width: 300px;
+	  -webkit-appearance:none;
+	}
+    form fieldset select[type="select"] {
+		background: #e5e5e5;
+		border: none;
+		border-radius: 3px;
+		color: #5a5656;
+		font-family: inherit;
+		font-size: 11px;
+		height: 30px;
+		outline: none;
+		padding: 0px 5px;
+		width: 350px;
+	  -webkit-appearance:none;
+	}
+	form fieldset input[type="submit"] {
+		background-color: #13de00;
+		border: none;
+		border-radius: 3px;
+		color: #f4f4f4;
+		cursor: pointer;
+		font-family: inherit;
+		height: 30px;
+		text-transform: uppercase;
+		width: 60px;
+	  -webkit-appearance:none;
+	  -webkit-transition: all 0.3 ease;
+		transition: all 0.3 ease;
+		cursor: pointer;
+		font-size: 10px;
+	}
+	
+	form fieldset a {
+		color: #5a5656;
+		font-size: 10px;
+	}
+	
+	form fieldset a:hover { text-decoration: underline; }
+	
+	.btn-round {
+		background: #5a5656;
+		border-radius: 50%;
+		color: #f4f4f4;
+		display: block;
+		font-size: 12px;
+		height: 50px;
+		line-height: 50px;
+		margin: 30px 125px;
+		text-align: center;
+		text-transform: uppercase;
+		width: 50px;
+	}
+	
+
+}
+@media only screen and (max-width: 320px) {
+    .login {
+        margin: 30px auto;
+		width: 245px;
+
+    }
+    .message {
+        margin: 35px 0 0;
+        color: #000000;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+	  }
+	  
+	  .submessage {
+		margin: 35px 0 0;
+		color: #524f4f;
+		font-size: 11px;
+		font-family: "Roboto", sans-serif;
+      }
+
+      .boxlist {
+		margin: 2px 0 0;
+		color: #524f4f;
+		font-size: 11px;
+		font-family: "Roboto", sans-serif;
+      }
+      form fieldset select[type="select"] {
+		background: #e5e5e5;
+		border: none;
+		border-radius: 3px;
+		color: #5a5656;
+		font-family: inherit;
+		font-size: 11px;
+		height: 30px;
+		outline: none;
+		padding: 0px 5px;
+		width: 350px;
+	  -webkit-appearance:none;
+	}
+	form fieldset input[type="text"] {
+		background: #e5e5e5;
+		border: none;
+		border-radius: 3px;
+		color: #5a5656;
+		font-family: inherit;
+		font-size: 11px;
+		height: 30px;
+		outline: none;
+		padding: 0px 5px;
+		width: 245px;
+	  -webkit-appearance:none;
+	}
+	
+	form fieldset input[type="submit"] {
+		
+		background-color: #13de00;
+		border: none;
+		border-radius: 3px;
+		color: #f4f4f4;
+		cursor: pointer;
+		font-family: inherit;
+		height: 30px;
+		text-transform: uppercase;
+		width: 60px;
+	  -webkit-appearance:none;
+	  -webkit-transition: all 0.3 ease;
+		transition: all 0.3 ease;
+		cursor: pointer;
+		font-size: 10px;
+	}
+	form fieldset a {
+		color: #5a5656;
+		font-size: 10px;
+	}
+	
+	form fieldset a:hover { text-decoration: underline; }
+	
+	.btn-round {
+		background: #5a5656;
+		border-radius: 50%;
+		color: #f4f4f4;
+		display: block;
+		font-size: 12px;
+		height: 50px;
+		line-height: 50px;
+		margin: 30px 100px;
+		text-align: center;
+		text-transform: uppercase;
+		width: 50px;
+	}
+
+}
+@media only screen and (min-width: 425px) {
+	.login {
+		margin: 35px auto;
+		width: 350px;
+	
+	}
+    .boxlist {
+		margin: 2px 0 0;
+		color: #524f4f;
+		font-size: 11px;
+		font-family: "Roboto", sans-serif;
+      }
+	.message {
+        margin: 35px 0 0;
+        color: #000000;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+      }
+	  .submessage {
+		margin: 35px 0 0;
+		color: #524f4f;
+		font-size: 11px;
+		font-family: "Roboto", sans-serif;
+	  }
+	form fieldset input[type="text"] {
+		background: #e5e5e5;
+		border: none;
+		border-radius: 3px;
+		color: #5a5656;
+		font-family: inherit;
+		font-size: 11px;
+		height: 30px;
+		outline: none;
+		padding: 0px 5px;
+		width: 350px;
+	  -webkit-appearance:none;
+	}
+    
+    form fieldset select[type="select"] {
+		background: #e5e5e5;
+		border: none;
+		border-radius: 3px;
+		color: #5a5656;
+		font-family: inherit;
+		font-size: 11px;
+		height: 30px;
+		outline: none;
+		padding: 0px 5px;
+		width: 350px;
+	  -webkit-appearance:none;
+	}
+	form fieldset input[type="submit"] {
+		
+		background-color: #13de00;
+		border: none;
+		border-radius: 3px;
+		color: #f4f4f4;
+		cursor: pointer;
+		font-family: inherit;
+		height: 30px;
+		text-transform: uppercase;
+		width: 60px	;
+	  -webkit-appearance:none;
+	  -webkit-transition: all 0.3 ease;
+		transition: all 0.3 ease;
+		cursor: pointer;
+		font-size: 10px;
+	}
+	
+	form fieldset a {
+		color: #5a5656;
+		font-size: 10px;
+	}
+	
+	form fieldset a:hover { text-decoration: underline; }
+	
+	.btn-round {
+		background: #5a5656;
+		border-radius: 50%;
+		color: #f4f4f4;
+		display: block;
+		font-size: 12px;
+		height: 50px;
+		line-height: 50px;
+		margin: 30px 150px;
+		text-align: center;
+		text-transform: uppercase;
+		width: 50px;
+	}
+	
+	
+}
+
+
+

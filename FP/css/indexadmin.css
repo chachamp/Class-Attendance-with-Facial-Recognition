@@ -1,0 +1,702 @@
+body {
+
+    color: #777;
+
+    background-image: url("../image/intro-bg.jpg");
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -o-background-size: 100% 100%, auto;
+    -moz-background-size: 100% 100%, auto;
+    -webkit-background-size: 100% 100%, auto;
+    background-size: 100% 100%, auto;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+
+}
+
+img {
+    width: 42px;
+    height: 42px;
+}
+
+h3 {
+    font-size: 40px;
+    background: -webkit-linear-gradient(
+      left,
+      #3ab5b0 0%,
+      #3d99be 31%,
+      #56317a 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+@media (min-width: 375px) {
+
+    h3,
+    h4 {
+        margin: 10px 0 30px 0;
+        letter-spacing: 10px;
+        font-size: 30px;
+        color: #fff;
+    }
+
+    .container {
+        margin: 175px auto;
+        width: 300px;
+
+    }
+
+    p.indent {
+        padding: 0px 0px;
+
+    }
+
+    form {
+        margin: 10px auto;
+        width: 300px;
+    }
+
+    form fieldset input[type="password"] {
+        background: #e5e5e5;
+        border: none;
+        border-radius: 3px;
+        color: #5a5656;
+        font-family: inherit;
+        font-size: 14px;
+        height: 30;
+        outline: none;
+        padding: 0px 15px;
+        width: 300px;
+
+    }
+
+    form fieldset input[type="text"] {
+        background: #e5e5e5;
+        border: none;
+        border-radius: 3px;
+        color: #5a5656;
+        font-family: inherit;
+        font-size: 14px;
+        height: 30;
+        outline: none;
+        padding: 0px 15px;
+        width: 300px;
+        -webkit-appearance: none;
+    }
+
+    form input[type="text"] {
+        background: #fff;
+        border: none;
+        border-radius: 3px;
+        color: #5a5656;
+        font-family: inherit;
+        font-size: 14px;
+        height: 30;
+        outline: none;
+        padding: 0px 5px;
+        width: 300px;
+        -webkit-appearance: none;
+    }
+
+    .navbar {
+        font-family: Montserrat, sans-serif;
+        margin-bottom: 0;
+        background-color: #b70601;
+        border: 0;
+        font-size: 11px !important;
+        letter-spacing: 4px;
+        opacity: 0.9;
+    }
+
+    .navbar li a,
+    .navbar .navbar-brand {
+        color: #d5d5d5 !important;
+    }
+
+    .navbar-nav li a:hover {
+        color: #fff !important;
+    }
+
+    .navbar-nav li.active a {
+        color: #fff !important;
+        background-color: #29292c !important;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+    }
+
+    footer {
+        background-color: #2d2d30;
+        color: #f5f5f5;
+        padding: 3px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        font-size: 10.5px;
+
+    }
+
+    footer a {
+        color: #f5f5f5;
+    }
+
+    footer a:hover {
+        color: #777;
+        text-decoration: none;
+    }
+
+    .form-control {
+        border-radius: 0;
+    }
+
+    form input[type="submit"] {
+        background-color: #e55b50;
+        border: none;
+        border-radius: 3px;
+        color: #f4f4f4;
+        cursor: pointer;
+        font-family: inherit;
+        height: 30px;
+        text-transform: uppercase;
+        width: 60px;
+        -webkit-appearance: none;
+        -webkit-transition: all 0.3 ease;
+        transition: all 0.3 ease;
+        cursor: pointer;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    h3,
+    h4 {
+        margin: 10px 0 30px 0;
+        letter-spacing: 10px;
+        font-size: 30px;
+        color: #fff;
+    }
+
+    .container {
+        margin: 175px auto;
+        width: 300px;
+
+    }
+
+    p.indent {
+        padding: 0px 0px;
+
+    }
+
+    form {
+        margin: 10px auto;
+        width: 300px;
+    }
+
+    form fieldset input[type="password"] {
+        background: #e5e5e5;
+        border: none;
+        border-radius: 3px;
+        color: #5a5656;
+        font-family: inherit;
+        font-size: 14px;
+        height: 30;
+        outline: none;
+        padding: 0px 15px;
+        width: 300px;
+
+    }
+
+    form fieldset input[type="text"] {
+        background: #e5e5e5;
+        border: none;
+        border-radius: 3px;
+        color: #5a5656;
+        font-family: inherit;
+        font-size: 14px;
+        height: 30;
+        outline: none;
+        padding: 0px 15px;
+        width: 300px;
+        -webkit-appearance: none;
+    }
+
+    form input[type="text"] {
+        background: #fff;
+        border: none;
+        border-radius: 3px;
+        color: #dbd8d8;
+        font-family: inherit;
+        font-size: 14px;
+        height: 30;
+        outline: none;
+        padding: 0px 5px;
+        width: 300px;
+        -webkit-appearance: none;
+    }
+
+    .navbar {
+        font-family: Montserrat, sans-serif;
+        margin-bottom: 0;
+        background-color: #b70601;
+        border: 0;
+        font-size: 11px !important;
+        letter-spacing: 4px;
+        opacity: 0.9;
+    }
+
+    .navbar li a,
+    .navbar .navbar-brand {
+        color: #d5d5d5 !important;
+    }
+
+    .navbar-nav li a:hover {
+        color: #fff !important;
+    }
+
+    .navbar-nav li.active a {
+        color: #fff !important;
+        background-color: #29292c !important;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+    }
+
+    footer {
+        background-color: #2d2d30;
+        color: #f5f5f5;
+        padding: 3px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        font-size: 10.5px;
+
+    }
+
+    footer a {
+        color: #f5f5f5;
+    }
+
+    footer a:hover {
+        color: #777;
+        text-decoration: none;
+    }
+
+    .form-control {
+        border-radius: 0;
+    }
+
+    form input[type="submit"] {
+        background-color: #e55b50;
+        border: none;
+        border-radius: 3px;
+        color: #f4f4f4;
+        cursor: pointer;
+        font-family: inherit;
+        height: 30px;
+        text-transform: uppercase;
+        width: 60px;
+        -webkit-appearance: none;
+        -webkit-transition: all 0.3 ease;
+        transition: all 0.3 ease;
+        cursor: pointer;
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    h3,
+    h4 {
+        margin: 10px 0 30px 0;
+        letter-spacing: 10px;
+        font-size: 26px;
+        color: #fff;
+    }
+
+    .container {
+        margin: 175px auto;
+        width: 300px;
+
+    }
+
+    p.indent {
+        padding: 0px 0px;
+
+    }
+
+    form {
+        margin: 10px auto;
+        width: 260px;
+    }
+
+    form fieldset input[type="password"] {
+        background: #e5e5e5;
+        border: none;
+        border-radius: 3px;
+        color: #5a5656;
+        font-family: inherit;
+        font-size: 14px;
+        height: 30;
+        outline: none;
+        padding: 0px 15px;
+        width: 260px;
+
+    }
+
+    form fieldset input[type="text"] {
+        background: #e5e5e5;
+        border: none;
+        border-radius: 3px;
+        color: #5a5656;
+        font-family: inherit;
+        font-size: 14px;
+        height: 30;
+        outline: none;
+        padding: 0px 15px;
+        width: 260px;
+        -webkit-appearance: none;
+    }
+
+    form input[type="text"] {
+        background: #fff;
+        border: none;
+        border-radius: 3px;
+        color: #5a5656;
+        font-family: inherit;
+        font-size: 12px;
+        height: 30;
+        outline: none;
+        padding: 0px 5px;
+        width: 260px;
+        -webkit-appearance: none;
+    }
+
+    .navbar {
+        font-family: Montserrat, sans-serif;
+        margin-bottom: 0;
+        background-color: #b70601;
+        border: 0;
+        font-size: 11px !important;
+        letter-spacing: 4px;
+        opacity: 0.9;
+    }
+
+    .navbar li a,
+    .navbar .navbar-brand {
+        color: #d5d5d5 !important;
+    }
+
+    .navbar-nav li a:hover {
+        color: #fff !important;
+    }
+
+    .navbar-nav li.active a {
+        color: #fff !important;
+        background-color: #29292c !important;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+    }
+
+    footer {
+        background-color: #2d2d30;
+        color: #f5f5f5;
+        padding: 3px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        font-size: 10.5px;
+
+    }
+
+    footer a {
+        color: #f5f5f5;
+    }
+
+    footer a:hover {
+        color: #777;
+        text-decoration: none;
+    }
+
+    .form-control {
+        border-radius: 0;
+    }
+
+    form input[type="submit"] {
+        background-color: #e55b50;
+        border: none;
+        border-radius: 3px;
+        color: #f4f4f4;
+        cursor: pointer;
+        font-family: inherit;
+        height: 30px;
+        text-transform: uppercase;
+        width: 60px;
+        -webkit-appearance: none;
+        -webkit-transition: all 0.3 ease;
+        transition: all 0.3 ease;
+        cursor: pointer;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 425px) {
+
+    h3 {
+        margin: 10px 0 30px 0;
+        letter-spacing: 10px;
+        font-size: 30px;
+        color: #fff;
+    }
+
+    h4 {
+        margin: 10px 0 30px 0;
+        letter-spacing: 10px;
+        font-size: 40px;
+        color: #fff;
+    }
+
+    .container {
+        margin: 175px auto;
+        width: 300px;
+
+    }
+
+    .message {
+        font-family: inherit;
+        font-size: 10px;
+    }
+
+    p.indent {
+        padding: 0px 0px;
+
+    }
+
+    form {
+        margin: 15px auto;
+        width: 300px;
+    }
+
+    form fieldset input[type="password"] {
+        background: #e5e5e5;
+        border: none;
+        border-radius: 20px;
+        color: #5a5656;
+        font-family: inherit;
+        font-size: 14px;
+        height: 35px;
+        outline: none;
+        padding: 0px 15px;
+        width: 300px;
+
+    }
+
+    form fieldset input[type="text"] {
+        background: #e5e5e5;
+        border: none;
+        border-radius: 20px;
+        color: #5a5656;
+        font-family: inherit;
+        font-size: 14px;
+        height: 35px;
+        outline: none;
+        padding: 0px 15px;
+        width: 300px;
+        -webkit-appearance: none;
+    }
+
+    form input[type="text"] {
+        background: #ffffff;
+        border: none;
+        border-radius: 3px;
+        color: #5a5656;
+        font-family: inherit;
+        font-size: 14px;
+        height: 30;
+        outline: none;
+        padding: 0px 15px;
+        width: 300px;
+        -webkit-appearance: none;
+    }
+
+    .navbar {
+        font-family: Montserrat, sans-serif;
+        margin-bottom: 0;
+        background-color: transparent;
+        border: 0;
+        font-size: 11px !important;
+        letter-spacing: 4px;
+        opacity: 0.9;
+    }
+
+    footer {
+        background-color: #2d2d30;
+        color: #f5f5f5;
+        padding: 10px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        font-size: 12.5px;
+
+
+    }
+
+    footer a {
+        color: #f5f5f5;
+    }
+
+    footer a:hover {
+        color: #777;
+        text-decoration: none;
+    }
+
+    .form-control {
+        border-radius: 0;
+    }
+
+    form input[type="submit"] {
+        background-color: #00a500;
+        border: none;
+        border-radius: 15px;
+        color: #f4f4f4;
+        cursor: pointer;
+        font-family: inherit;
+        height: 30px;
+        text-transform: uppercase;
+        width: 60px;
+        -webkit-appearance: none;
+        -webkit-transition: all 0.3 ease;
+        transition: all 0.3 ease;
+        cursor: pointer;
+        font-size: 10px;
+    }
+
+    form input[type="submit"]:hover {
+        background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+}
+
+.navbar-brand {
+    padding: 4px 4px;
+}
+
+form {
+    margin: 15px auto;
+    width: 300px;
+}
+
+form fieldset input[type="password"] {
+    background: #e5e5e5;
+    border: none;
+    border-radius: 20px;
+    color: #5a5656;
+    font-family: inherit;
+    font-size: 14px;
+    height: 35px;
+    outline: none;
+    padding: 0px 15px;
+    width: 300px;
+
+}
+
+form fieldset input[type="text"] {
+    background: #e5e5e5;
+    border: none;
+    border-radius: 20px;
+    color: #5a5656;
+    font-family: inherit;
+    font-size: 14px;
+    height: 35px;
+    outline: none;
+    padding: 0px 15px;
+    width: 300px;
+    -webkit-appearance: none;
+}
+
+form input[type="text"] {
+    background: #ffffff;
+    border: none;
+    border-radius: 3px;
+    color: #5a5656;
+    font-family: inherit;
+    font-size: 14px;
+    height: 30;
+    outline: none;
+    padding: 0px 5px;
+    width: 300px;
+    -webkit-appearance: none;
+}
+
+.navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+}
+
+footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 12.5px;
+
+
+}
+
+footer a {
+    color: #f5f5f5;
+}
+
+footer a:hover {
+    color: #777;
+    text-decoration: none;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+form input[type="submit"] {
+    background-color: #00a500;
+    border: none;
+    border-radius: 15px;
+    color: #f4f4f4;
+    cursor: pointer;
+    font-family: inherit;
+    height: 30px;
+    text-transform: uppercase;
+    width: 60px;
+    -webkit-appearance: none;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+form input[type="submit"]:hover {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+a{
+    font-family: 'roboto';
+}

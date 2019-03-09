@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+
+@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+
+    
+/* ---------- GENERAL ---------- */
+
+body {
+	background: #f1f1f1;
+	color: #797272;
+	font-size: 12px;  
+  font-family:'Open Sans', sans-serif;
+  margin: 0;
+
+
+}
+
+
+/* ---------- LOGIN ---------- */
+
+
+.form {
+	margin: 10px auto;
+    min-width: 350px;
+   /*-- background: #e6e4e4; */
+    padding: 1% 11 3;
+    font-size: 16px;  
+    font-family:'Open Sans', sans-serif;
+    
+}
+
+
+
+.message {
+    margin: 35px 0 0;
+    color: #000000;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .message1 {
+    margin: 15px 0 0;
+    color: #000000;
+    font-size: 20px;
+    
+  }
+  .message2 {
+    margin: 15px 0 0;
+	color: #797272;
+  
+    font-size: 12px;
+    
+  }
+
+input[type="text"] {
+    background:#ffffff;
+    border: none;
+    color: black;
+    padding-left: 10px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 20%;
+    height: 5%;
+    outline: none;
+}
+.login {
+  margin: 35px auto;
+  width: 350px;
+
+  }
+
+  form fieldset input[type="password"]{
+    background: #e5e5e5;
+    border: none;
+    border-radius: 3px;
+    color: #5a5656;
+    font-family: inherit;
+    font-size: 14px;
+    height: 30;
+    outline: none;
+    padding: 0px 5px;
+    width: 300px;
+ 
+}
+form fieldset input[type="text"] {
+    background: #e5e5e5;
+    border: none;
+    border-radius: 3px;
+    color: #5a5656;
+    font-family: inherit;
+    font-size: 14px;
+    height: 30;
+    outline: none;
+    padding: 0px 5px;
+    width: 200px;
+  -webkit-appearance:none;
+}
+
+form fieldset input[type="submit"] {
+  background: #e5e5e5;
+  border: none;
+  border-radius: 3px;
+  color: #5a5656;
+  font-family: inherit;
+  font-size: 14px;
+  height: 30;
+  outline: none;
+  padding: 0px 5px;
+  width: 200px;
+-webkit-appearance:none;
+}
+form input[type="text"] {
+    background: #ffffff;
+    
+    border-radius: 3px;
+    color: #5a5656;
+    font-family: inherit;
+    font-size: 14px;
+    height: 30;
+    outline: none;
+    padding: 0px 5px;
+    width: 300px;
+  -webkit-appearance:none;
+}
+form {
+  margin: 15px auto;
+width: 300px;
+  }
+
+.modal-dialog{
+  padding-top: 150px;
+}
+
+  
+
+h3{
+  margin: 30px 0 30px 0;
+  letter-spacing: 2px;      
+  font-size: 20px;
+  color: rgb(12, 12, 12);
+}
+

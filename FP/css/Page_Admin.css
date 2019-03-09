@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- https://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* ---------- https://meyerweb.com/eric/tools/css/reset/ ---------- */
+
+@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+body {
+	background: #f2f2f2;
+	color: #5a5656;
+	font: 100%/1.5em 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+a { text-decoration: none; }
+
+h1 { font-size: 1em; }
+
+h1, p {
+	margin-bottom: 10px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.uppercase { text-transform: uppercase; }
+
+/* ---------- LOGIN ---------- */
+
+@media only screen and (min-width: 375px) {
+.login {
+	margin: 35px auto;
+	width: 300px;
+
+}
+
+
+
+
+form button [type="submit"] {
+    background: #13de00;
+	border: none;
+	border-radius: 0px 3px 3px 0px;
+	color: #f4f4f4;
+	cursor: pointer;
+	height: 50px;
+	text-transform: uppercase;
+    width: 300px;
+    font-family: inherit;
+}
+
+
+
+
+.form button:hover,.form button:active,.form button:focus {
+    background: #18d60a;}
+.btn-round {
+	background: #5a5656;
+	border-radius: 50%;
+	color: #f4f4f4;
+	display: block;
+	font-size: 12px;
+	height: 50px;
+	line-height: 50px;
+	margin: 30px 125px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 50px;
+}
+
+
+}
+@media only screen and (max-width: 375px) {
+	.login {
+		margin: 35px auto;
+		width: 300px;
+	
+	}
+	
+	
+	
+
+	form button[type="submit"] {
+		
+        background-color: #13de00;
+		border: none;
+		border-radius: 0px 3px 3px 0px;
+		color: #f4f4f4;
+		cursor: pointer;
+		height: 50px;
+		text-transform: uppercase;
+        width: 250px;
+        font-family: inherit;
+	}
+	
+
+	.form button:hover,.form button:active,.form button:focus {
+        background: #18d60a;}
+	.btn-round {
+		background: #5a5656;
+		border-radius: 50%;
+		color: #f4f4f4;
+		display: block;
+		font-size: 12px;
+		height: 50px;
+		line-height: 50px;
+		margin: 30px 125px;
+		text-align: center;
+		text-transform: uppercase;
+		width: 50px;
+	}
+	
+	
+}
+@media only screen and (max-width: 320px) {
+    .login {
+        margin: 30px auto;
+		width: 245px;
+
+	}
+	
+	form  button[type="submit"] {
+		
+		background-color: #13de00;
+		border: none;
+		border-radius: 0px 3px 3px 0px;
+		color: #f4f4f4;
+		cursor: pointer;
+		height: 45px;
+		text-transform: uppercase;
+        width: 245px;
+        font-family: inherit;
+	}
+	
+	.btn-round {
+		background: #5a5656;
+		border-radius: 50%;
+		color: #f4f4f4;
+		display: block;
+		font-size: 12px;
+		height: 50px;
+		line-height: 50px;
+		margin: 30px 100px;
+		text-align: center;
+		text-transform: uppercase;
+		width: 50px;
+	}
+	
+	
+}
+@media only screen and (min-width: 425px) {
+	.login {
+		margin: 35px auto;
+		width: 350px;
+	
+	}
+	
+	form button[type="button"] {
+		
+		background-color: #13de00;
+        border: none;
+		border-radius: 0px 3px 3px 0px;
+		color: #f4f4f4;
+		cursor: pointer;
+		height: 50px;
+		text-transform: uppercase;
+        width: 300px;
+        font-family: inherit;
+	}
+	
+
+	form button[type="submit"] {
+		
+		background-color: #13de00;
+        border: none;
+		border-radius: 0px 3px 3px 0px;
+		color: #f4f4f4;
+		cursor: pointer;
+		height: 50px;
+		text-transform: uppercase;
+        width: 300px;
+        font-family: inherit;
+	}
+	
+
+	.btn-round {
+		background: #5a5656;
+		border-radius: 50%;
+		color: #f4f4f4;
+		display: block;
+		font-size: 12px;
+		height: 50px;
+		line-height: 50px;
+		margin: 30px 150px;
+		text-align: center;
+		text-transform: uppercase;
+		width: 50px;
+	}
+	
+	}
+	
+	
+
+
+
+
