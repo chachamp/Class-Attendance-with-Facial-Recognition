@@ -1,0 +1,21 @@
+version: "3.3"
+services:
+  server:
+    build: .
+  mysql:
+    image: mysql:5.6
+    environment:
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: 123456
+      MYSQL_ROOT_PASSWORD: admin
+  adminer:
+    image: adminer
+    # ports:
+    #  - 8080:8080
+  nginx:
+    image: nginx
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+    ports:
+    - 80:80
+
